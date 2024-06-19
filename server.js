@@ -57,6 +57,7 @@ app.notify('*', (req, res) => {
 })
 
 app['m-search']('*', (req, res) => {
+  res.sendStatus(200)
 })
 
 app.options('*', (req, res) => {
