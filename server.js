@@ -3,9 +3,10 @@ const cors = require('cors')
 const app = express()
 
 app.use(cors())
+app.set('view engine', 'ejs')
 
 app.get('*', (req, res) => {
-  res.redirect(301, 'http://blackhole.rf.gd')
+  res.render('web')
 })
 
 app.post('*', (req, res) => {
