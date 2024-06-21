@@ -14,7 +14,7 @@ app.get('/web/home', (req, res) => {
 })
 
 app.get('*', (req, res) => {
-  res.status(404).render('404')
+  res.render('404')
 })
 
 app.all('*', (req, res) => {
