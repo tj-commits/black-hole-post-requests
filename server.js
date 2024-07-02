@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/web/home', (req, res) => {
-  res.render('web')
+  res.redirect('http://blackhole.rf.gd')
 })
 
 app.get('*', (req, res) => {
